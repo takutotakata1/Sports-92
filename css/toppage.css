@@ -81,6 +81,39 @@ html{
   width: 200px;
   margin: 0 25px;
 }
+
+/* 記事 */
+.articles{
+  padding: 2px 4%;
+  padding-left: 10%;
+}
+
+.latest{
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
+  margin-bottom: 100px;
+  padding: 1em;
+  width: 70%;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+td,th{
+  font-size: 1.6em;
+}
+
+th{
+  padding-right: 5em;
+  padding: 1em;
+  border-bottom: #333 dashed 1px;
+}
+td{
+  padding-left: 5em;
+  
+  border-bottom: #333 dashed 1px;
+}
+table tr:last-child td ,tr:last-child th{
+  border-bottom: none;
+}
+
 @keyframes fadein-bottom {
   0% {
      opacity: 0;
@@ -108,6 +141,12 @@ html{
   .maintext{
     text-align: center;
   }
+  .midashi{
+    font-size: 3em;
+  }
+  .midashi span{
+    font-size: 1.5em;
+  }
   .concept{
     padding-left: 4%;
   }
@@ -129,4 +168,23 @@ html{
     margin-top: 3em;
     font-size: 1em;
   }
+  .articles{
+    padding-left: 4%;
+  }
+  .latest{
+    width: 100%;
+    padding:0.3em 0.5em;
+  }
+  td,th{
+    font-size: 0.9em;
+  }
+  
+  th{
+    padding-right: 0;
+    padding: 1em;
+  }
+  td{
+    padding-left: 0;
+  }
+
 }
