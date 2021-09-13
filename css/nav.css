@@ -62,16 +62,21 @@
   list-style: none;
 }
 .gnav__menu__item a{
-  color: #fff;
-  font-size: 2em;
+  color: #7fbfff;
+  font-size: 0.8em;
   font-weight: 600;
   text-decoration: none;
   transition: .5s;
   padding: 0;
 }
-.gnav__menu__item a:hover{
+.gnav__menu__item a span{
+  font-size: 2rem;
+  color: #fff;
+}
+.gnav__menu__item a span:hover{
   color: #666;
 }
+
 
 @media(max-width:1000px){
   .gnav__menu{

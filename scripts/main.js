@@ -131,5 +131,5 @@ jQuery(function($){
     $(".animsition").animsition();
     var str = window.location.href.split('/').pop();
     var nowpage = str.split('.').shift()+'s';
-    $("."+nowpage+">a").css("background","linear-gradient(transparent 75%, #7fbfff 75%)");
+    $("."+nowpage+">a span").css("background","linear-gradient(transparent 75%, #7fbfff 75%)");
   });
