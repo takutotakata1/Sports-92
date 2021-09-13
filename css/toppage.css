@@ -1,0 +1,121 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+  font-family: "Noto Sans JP",sans-serif;
+  color: #000;
+}
+.main{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/* メインキャッチコピー */
+.maincatch{
+  height: 100vh;
+  margin:0;
+}
+.mainmidashi{
+  position: relative;
+}
+.maintext{
+  position: relative;
+  top: 50%;
+}
+
+.logosec{
+  width: 40em;
+  height: 50em;
+  float: right;
+}
+.mainlogo{
+  position: relative;
+  width: 40em;
+  margin: 5em 0;
+  margin-top: 0em;
+  opacity: 0;
+  animation-name: fadein-bottom;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+
+}
+
+/* コンテンツ */
+.midashi{
+  font-size: 3em;
+}
+.midashi span{
+  font-size: 5rem;
+  color: #f15a25;
+}
+.conceptmain{
+  display: flex;
+  margin: 10em 10%;
+}
+.photos{
+  margin-right: 15%;
+  width: 250px;
+}
+.name{
+  text-align: center;
+  margin-top: 1em;
+  width: 250px;
+}
+.conceptletters{
+  font-size: 20px;
+  line-height: 2;
+}
+.human{
+  border-radius: 50%;
+  width: 200px;
+  margin: 0 25px;
+}
+@keyframes fadein-bottom {
+  0% {
+     opacity: 0;
+     transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+@media(max-width:1000px){
+  .maincatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainlogo{
+    width: 20em;
+  }
+  .logosec{
+    width: 20em;
+    height: 20em;
+    margin-top: -4em;
+  }
+  .maintext{
+    text-align: center;
+  }
+  .conceptmain{
+    flex-direction: column;
+    margin: 3em 5%;
+  }
+  .photos{
+    left: 0;
+  }
+  .name{
+    text-align: left;
+  }
+  .human{
+    margin-left: 0;
+  }
+  .conceptletters{
+    margin-top: 3em;
+    font-size: 1.2em;
+  }
+}
