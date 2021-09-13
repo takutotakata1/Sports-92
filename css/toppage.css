@@ -2,21 +2,22 @@
 html{
   font-size: 100%;
   font-family: "Noto Sans JP",sans-serif;
-  color: #000;
+  color: #333;
 }
 .main{
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 4%;
+  padding: 0 0%;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
 /* メインキャッチコピー */
 .maincatch{
   height: 100vh;
-  margin:0;
+  margin:0 4%;
 }
 .mainmidashi{
   position: relative;
@@ -45,12 +46,18 @@ html{
 }
 
 /* コンテンツ */
+
 .midashi{
   font-size: 3em;
 }
 .midashi span{
   font-size: 5rem;
   color: #f15a25;
+}
+.concept{
+  height: max-content;
+  padding: 2px 4%;
+  padding-left: 10%;
 }
 .conceptmain{
   display: flex;
@@ -101,6 +108,9 @@ html{
   .maintext{
     text-align: center;
   }
+  .concept{
+    padding-left: 4%;
+  }
   .conceptmain{
     flex-direction: column;
     margin: 3em 5%;
@@ -113,9 +123,10 @@ html{
   }
   .human{
     margin-left: 0;
+    width: 150px;
   }
   .conceptletters{
     margin-top: 3em;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
