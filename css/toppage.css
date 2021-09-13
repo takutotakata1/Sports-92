@@ -58,6 +58,7 @@ html{
   height: max-content;
   padding: 2px 4%;
   padding-left: 10%;
+  padding-top: 0;
 }
 .conceptmain{
   display: flex;
