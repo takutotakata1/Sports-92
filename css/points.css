@@ -37,3 +37,47 @@ header a{
   margin-top: -2em;
   margin-bottom: -4em;
 }
+
+/* メインコンテンツ */
+.maincontent{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+.midashi{
+  font-size: 4em;
+}
+.point{
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  border: #c0c0c0 1px solid;
+  text-align: center;
+}
+td,th{
+  font-size: 2rem;
+  padding: 1rem;
+  /* border-bottom: #c0c0c0 1px solid;
+  border-right: #c0c0c0 1px solid; */
+  border: #c0c0c0 1px solid;
+}
+td:last-child,th:last-child{
+  border-right: none;
+}
+.noborder{
+  border-bottom: none;
+}
+td{
+  width: 7em;
+}
+.two{
+  /* background-color: #ff9999; */
+  background-color: #e95464;
+}
+.three{
+  background-color: #fef263;
+}
+.four{
+  background-color: #aacf53;
+}
