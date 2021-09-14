@@ -47,6 +47,10 @@ header a{
 .midashi{
   font-size: 4em;
 }
+.midashi span{
+  font-size: 1.5em;
+  color: #f15a25;
+}
 .point{
   box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
   border-collapse: collapse;
@@ -92,30 +96,6 @@ td{
   .midashi span{
     font-size: 1.5em;
   }
-  .concept{
-    padding-left: 4%;
-  }
-  .conceptmain{
-    flex-direction: column;
-    margin: 3em 5%;
-  }
-  .photos{
-    left: 0;
-  }
-  .name{
-    text-align: left;
-  }
-  .human{
-    margin-left: 0;
-    width: 150px;
-  }
-  .conceptletters{
-    margin-top: 3em;
-    font-size: 1em;
-  }
-  .articles{
-    padding-left: 4%;
-  }
   .point{
     width: 95%;
     padding:0.3em 0.5em;
@@ -130,6 +110,9 @@ td{
     padding: 0.5em;
   }
   .classes{
+    font-size: 1em;
+  }
+  .name{
     font-size: 1em;
   }
 }

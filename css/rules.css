@@ -48,6 +48,10 @@ header a{
 .midashi{
   font-size: 4rem;
 }
+.midashi span{
+  font-size: 1.5em;
+  color: #f15a25;
+}
 
 /* 検索フォーム */
 .forms{
