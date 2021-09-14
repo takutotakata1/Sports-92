@@ -51,6 +51,37 @@ header a{
   font-size: 1.5em;
   color: #f15a25;
 }
+/* 合計得点 */
+.sum{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:100px auto;
+}
+.circle{
+  border-radius: 50%;
+  padding: 2em;
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
+}
+.circle h2{
+  font-weight: normal;
+  font-size: 1.4em;
+  text-align: center;
+}
+.circle p{
+  font-weight: bold;
+  font-size: 3em;
+}
+.twopoint{
+  color: #e95464;
+}
+.threepoint{
+  color: #ffea00;
+}
+.fourpoint{
+  color: #007b43;
+}
+
 .point{
   box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
   border-collapse: collapse;
@@ -114,5 +145,17 @@ td{
   }
   .name{
     font-size: 1em;
+  }
+  .circle h2{
+    font-size: 0.7em;
+  }
+  .circle p{
+    font-size: 1.5em;
+  }
+  .circle{
+    padding: 1em;
+  }
+  .sum{
+    margin: 30px auto;
   }
 }
