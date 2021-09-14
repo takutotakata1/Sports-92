@@ -177,13 +177,22 @@ td{
   }
   .sum{
     margin: 30px auto;
+    margin-top: 0;
     flex-direction: column;
   }
   .onetwo{
     width: 100%;
     margin-bottom: 20px;
+    justify-content: center;
   }
   .threefour{
     width: 100%;
+    justify-content: center;
+  }
+  .onepoint,.threepoint{
+    margin-right: 20px;
+  }
+  .twopoint,.fourpoint{
+    margin-left: 20px;
   }
 }
