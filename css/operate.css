@@ -51,6 +51,39 @@ header a{
   font-size: 1.5em;
   color: #f15a25;
 }
+
+/* 注意書き */
+.warning{
+  margin:20px 10%;
+  box-shadow: 0 0 3px rgba(128, 128, 128, 0.521);
+  padding: 15px;
+  padding-left: 50px;
+  background-color: #89c3eb;
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+.warning li{
+  position: relative;
+  padding-left: 15px;
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.warning li:before {
+  content: "";
+  position: absolute;
+  top: .1em;
+  left: -1em;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+  width: 15px;
+  height: 30px;
+  border-right: 9px solid #000;
+  border-bottom: 9px solid #000;
+}
 /* 合計得点 */
 .sum{
   display: flex;
@@ -160,6 +193,16 @@ button:hover{
   background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
   background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
 }
+
+#change{
+  width: max-content;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+.radios label{
+  font-size: 30px;
+  font-weight: 500;
+}
 @media(max-width:1000px){
   .maincontent{
     margin: 0 4%;
@@ -209,5 +252,21 @@ button:hover{
   }
   .threefour{
     width: 100%;
+  }
+  .radios label{
+    font-size: 20px;
+  }
+  .warning{
+    padding-left: 10px;
+  }
+  .warning li{
+    font-size: 15px;
+  }
+  .warning li:before {
+    left: 0;
+    width: 5px;
+    height: 10px;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
   }
 }
