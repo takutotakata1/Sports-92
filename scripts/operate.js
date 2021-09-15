@@ -11,9 +11,10 @@ $.getJSON("/scripts/points.json")
         for (let i = 0; i < scores.length; i++) {
           console.log(scores[i] + "\n");
           if (scores[i] != 0) {
-            json.pointslist[i] = scores[i]
+            json.pointslist[i] = scores[i];
           }
         }
+        json.pointslist[2] = 12;
         alert("変更完了");
         console.log(json.pointslist);
       });
