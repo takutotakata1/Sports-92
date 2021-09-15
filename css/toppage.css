@@ -66,7 +66,7 @@ html{
 }
 .photos{
   margin-right: 15%;
-  width: 250px;
+  width: 300px;
 }
 .name{
   text-align: center;
@@ -76,6 +76,9 @@ html{
 .conceptletters{
   font-size: 20px;
   line-height: 2;
+}
+.conceptletters p{
+  margin-bottom: 10px;
 }
 .human{
   border-radius: 50%;
@@ -157,9 +160,13 @@ table tr:last-child td ,tr:last-child th{
   }
   .photos{
     left: 0;
+    margin-right: 0;
   }
   .name{
     text-align: left;
+    margin-right: 0;
+    width: 100%;
+    line-height: 2;
   }
   .human{
     margin-left: 0;
