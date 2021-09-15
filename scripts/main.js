@@ -93,8 +93,11 @@ jQuery(function($){
     } else{
       $('.remaindays').text("2021年度体育祭は終了いたしました。")
     }    
-    //トップページのマーカーのアニメーション
+    //マーカーのアニメーション
+    // トップページ
     $('.remaindays').markerAnimation();
+    // 記事
+    $('.paragraph h2').markerAnimation({thickness:'0.5em'});
     // フルスクリーンナビゲーションの稼働
     $('.menu').on('click',function(){
       $('.menu__line').toggleClass('active');
