@@ -79,16 +79,15 @@ header a{
   display: none;
 }
 .lists dt::after{
-  position: relative;
-  border-bottom: solid 4px #5bc8ac;
-  border-right: solid 4px #5bc8ac;
-  width: 24px;
-  height: 24px;
-  transform: rotate(45deg);
-  top: 0px;
-  bottom: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  position: absolute;
+  right: 10%;
 }
-
+.lists dt.on::after{
+  content: "\f077";
+}
 
 @media(max-width:1000px){
   .maincontent{

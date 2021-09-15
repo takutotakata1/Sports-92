@@ -117,19 +117,11 @@ jQuery(function($){
       })
     });
 
-    //競技説明ページの切り替え
-    $('.switch').on('click',function(){
-      $('.maintable').fadeOut(400);
-      var idname = $(this).attr("id");
-      $('.'+idname).fadeIn(800);
-    });
-    $('.closebutton').on('click',function(){
-      $('article').fadeOut(400);
-      $('.maintable').fadeIn(800);
-    });
+    //競技説明ページのアコーディオン
     $('.lists dt').each(function(){
       $(this).on('click',function () { 
         $('+.sub',this).slideToggle();
+        $(this).toggleClass('on');
         return false;
        })
     });
