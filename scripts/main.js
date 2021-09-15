@@ -127,6 +127,12 @@ jQuery(function($){
       $('article').fadeOut(400);
       $('.maintable').fadeIn(800);
     });
+    $('.lists dt').each(function(){
+      $(this).on('click',function () { 
+        $('+.sub',this).slideToggle();
+        return false;
+       })
+    });
   });
 
   // animsitionの実行
