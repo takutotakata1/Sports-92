@@ -103,6 +103,9 @@ html{
   margin: 50px auto;
   border-radius: 10px;
 }
+.links:link,.links:visited,.links:hover,.links:active{
+  color:blue;
+}
 td,th{
   font-size: 1.6em;
 }
