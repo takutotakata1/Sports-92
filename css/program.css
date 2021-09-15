@@ -126,6 +126,10 @@ td a:hover::before {
   top: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
+  line-height: 1.5;
+}
+.modal__content p{
+  margin-bottom: 10px;
 }
 .modal__content h1,.modal__content p{
   text-align: left;
