@@ -43,27 +43,7 @@
   </script>
 
 <body class="animsition">
-  <a class="menu">
-    <span class="menu__line menu__line--top"></span>
-    <span class="menu__line menu__line--center"></span>
-    <span class="menu__line menu__line--bottom"></span>
-  </a>
-  <nav class="gnav">
-    <div class="gnav__wrap">
-      <ul class="gnav__menu">
-        <li class="gnav__menu__item toppages"><a href="toppage.html" class="animsition-link">トップページ<br><span>Top</span></a></li>
-        <li class="gnav__menu__item programs"><a href="program.html" class="animsition-link">プログラム<br><span>Program</span></a></li>
-        <!-- coming soon -->
-        <li class="gnav__menu__item ruless"><a href="rules.html" class="animsition-link" style="pointer-events: none; color: #797979;">競技説明<br><span style="color: #797979;">Rules(Coming Soon)</span></a>
-        </li>
-        <li class="gnav__menu__item pointss"><a href="points.html"
-            class="animsition-link" style="color: #797979;">現在の得点<br><span style="color: #797979;">Points(Coming Soon)</span></a></li>
-        <!-- coming soon end -->
-        <li class="gnav__menu__item articless"><a href="articles.html"
-          class="animsition-link">記事一覧<br><span>Articles</span></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="nav"></div>
   <div class="main">
     <div class="maincatch area">
       <div class="logosec">
@@ -77,7 +57,18 @@
       <a href="#jumplink" class="scroll" data-scroll><span></span>Scroll</a>
     </div>
     <div class="content">
-      <div class="concept area" id="jumplink">
+      <div class="about" id="jumplink">
+        <h1 class="midashi" data-aos="fade-in" data-aos-delay="200" data-aos-once="true"><span>V</span>ision</h1>
+        <div class="conceptmain" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
+          <div class="photos">
+            <img src="../img/sakakitani.jpg" alt="Chairman" class="human">
+            <h2 class="name">体育委員長<br>榊谷貫人</h2>
+          </div>
+          <div class="conceptletters"><p>数年前には想像もつかなかったような、混沌とした世の中になりました。人と人との間に深い隔たりができ、「一丸」の二文字がより一層強い意味を持つようになったと感じています。数年後、数十年後に集まった皆さんの間で共有されるのはどのような光景でしょうか。</p>
+            <p>ただの思い出も、ただでは手に入りません。精一杯楽しんで、一生懸命汗を流して。そして、この体育祭が皆さんにとって色濃く残る最高の１ページとなること。それが体育委員長としての僕の一番の願いです。</p></div>
+        </div>
+      </div>
+      <div class="concept area">
         <h1 class="midashi" data-aos="fade-in" data-aos-delay="200" data-aos-once="true"><span>C</span>oncept</h1>
         <div class="conceptmain" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
           <div class="photos">
@@ -104,10 +95,7 @@
       </div>
     </div>
   </div>
-  <footer>
-    <p>92rd Nada Sports Festival</p>
-    <small>Copyright&copy;2021 Digital Team</small>
-  </footer>
+  <div id="footer"></div>
   <script src="../vendor/aos.js"></script>
   <script>
     AOS.init();

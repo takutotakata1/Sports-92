@@ -142,3 +142,10 @@ jQuery(function($){
     var nowpage = str.split('.').shift()+'s';
     $("."+nowpage+">a span").css("background","linear-gradient(transparent 75%, #7fbfff 75%)");
   });
+
+  $(function() {
+    $("#nav").load("../html/parts/nav.html");
+    $("#footer").load("../html/parts/footer.html");
+    $("#nav").load("../../html/parts/nav.html");
+    $("#footer").load("../../html/parts/footer.html");
+});

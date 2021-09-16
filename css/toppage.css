@@ -104,6 +104,12 @@ html{
   font-size: 5rem;
   color: #f15a25;
 }
+.about{
+  height: max-content;
+  padding: 2px 4%;
+  padding-left: 10%;
+  padding-top: 0;
+}
 .concept{
   height: max-content;
   padding: 2px 4%;
@@ -131,6 +137,8 @@ html{
 .human{
   border-radius: 50%;
   width: 200px;
+  height: 200px;
+  object-fit: cover;
   margin: 0 75px;
 }
 
@@ -208,6 +216,9 @@ table tr:last-child td ,tr:last-child th{
   .midashi span{
     font-size: 1.5em;
   }
+  .about{
+    padding-left: 4%; 
+  }
   .concept{
     padding-left: 4%;
   }
@@ -224,6 +235,7 @@ table tr:last-child td ,tr:last-child th{
   .human{
     margin-left: 0;
     width: 150px;
+    height: 150px;
   }
   .conceptletters{
     margin-top: 3em;
