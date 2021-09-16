@@ -19,6 +19,7 @@
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../vendor/marker-animation.js"></script>
   <script src="../vendor/aimsition.js"></script>
+  <script src="../vendor/smooth-scroll.js"></script>
 
   <script src="../scripts/main.js"></script>
 
@@ -33,6 +34,13 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../img/logo.png">
   <title>灘校体育祭</title>
 </head>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+  speedAsDuration:true,
+  speed:1000,
+  easing:'easeInOutQuint'
+  });
+  </script>
 
 <body class="animsition">
   <a class="menu">
@@ -66,7 +74,7 @@
         <h2 class="remaindays">開催まであと<span>N日</span></h2>
       </div>
       
-      <a href="#jumplink" class="scroll"><span></span>Scroll</a>
+      <a href="#jumplink" class="scroll" data-scroll><span></span>Scroll</a>
     </div>
     <div class="content">
       <div class="concept area" id="jumplink">
