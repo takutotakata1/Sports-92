@@ -22,8 +22,6 @@
 
   <script src="../scripts/main.js"></script>
 
-  <link rel="icon" href="../img/logo.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../img/logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +29,8 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
     rel="stylesheet">
+  <link rel="icon" href="../img/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/logo.png">
   <title>灘校体育祭</title>
 </head>
 
@@ -45,12 +45,8 @@
       <ul class="gnav__menu">
         <li class="gnav__menu__item toppages"><a href="toppage.html" class="animsition-link">トップページ<br><span>Top</span></a></li>
         <li class="gnav__menu__item programs"><a href="program.html" class="animsition-link">プログラム<br><span>Program</span></a></li>
-        <!-- coming soon -->
-        <li class="gnav__menu__item ruless"><a href="rules.html" class="animsition-link" style="pointer-events: none; color: #797979;">競技説明<br><span style="color: #797979;">Rules(Coming Soon)</span></a>
-        </li>
-        <li class="gnav__menu__item pointss"><a href="points.html"
-            class="animsition-link" style="color: #797979;">現在の得点<br><span style="color: #797979;">Points(Coming Soon)</span></a></li>
-        <!-- coming soon end -->
+        <li class="gnav__menu__item ruless"><a href="rules.html" class="animsition-link" >競技説明<br><span>Rules</span></a></li>
+        <li class="gnav__menu__item pointss"><a href="points.html" class="animsition-link">現在の得点<br><span>Points</span></a></li>
         <li class="gnav__menu__item articless"><a href="articles.html"
           class="animsition-link">記事一覧<br><span>Articles</span></a></li>
       </ul>
@@ -58,24 +54,25 @@
   </nav>
   <div class="main">
     <div class="maincatch area">
+      <div class="logosec">
+        <img class="mainlogo" src="../img/logo-black.png" alt="logo">
+      </div>
       <div class="maintext">
         <h1 class="mainmidashi">第92回灘校体育祭</h1>
         <h2 class="remaindays">開催まであと<span>N日</span></h2>
       </div>
-      <div class="logosec">
-        <img class="mainlogo" src="../img/logo-black.png" alt="logo">
-      </div>
+      
+      <a href="#jumplink" class="scroll"><span></span>Scroll</a>
     </div>
     <div class="content">
-      <div class="concept area">
+      <div class="concept area" id="jumplink">
         <h1 class="midashi" data-aos="fade-in" data-aos-delay="200" data-aos-once="true"><span>C</span>oncept</h1>
         <div class="conceptmain" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
           <div class="photos">
-            <img src="../img/josuke_photo2.jpeg" alt="Designer" class="human">
+            <img src="../img/josuke_photo.jpeg" alt="Designer" class="human">
             <h2 class="name">体育委員会デザイン課統括<br>髙島晟輔</h2>
           </div>
-          <div class="conceptletters">
-            <p>今年の体育祭テーマは「颯（はやて）」。</p>
+          <div class="conceptletters"><p>今年の体育祭テーマは「颯（はやて）」。</p>
             <p>へんの「立」でハードルを、つくりの「風」でスピード感を表現することで、トラックを颯爽と駆け抜ける灘校生をデザインしました。このWebサイトはもちろん、うちわやパンフレット、体育委員Tシャツなど、至るところでこのロゴを目にすることができると思います。</p>
             <p>第92回灘校体育祭を彩るロゴとして気に入っていただけたら幸いです。</p></div>
         </div>
@@ -84,11 +81,11 @@
         <h1 class="midashi" data-aos="fade-in" data-aos-delay="200" data-aos-once="true"><span>最</span>新情報</h1>
         <table class="latest" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
           <tr>
-            <th>2021.9.16</th>
+            <th>2021.9.13</th>
             <td><a href="articles/chairman.html" class="links">委員長挨拶</a>を公開しました</td>
           </tr>
           <tr>
-            <th>2021.9.16</th>
+            <th>2021.9.13</th>
             <td><a href="articles/principal.html" class="links">学校長挨拶</a>を公開しました</td>
           </tr>
         </table>
@@ -97,7 +94,7 @@
   </div>
   <footer>
     <p>92rd Nada Sports Festival</p>
-    <small>Copyright&copy;2021 Digital Division</small>
+    <small>Copyright&copy;2021 Digital Team</small>
   </footer>
   <script src="../vendor/aos.js"></script>
   <script>
