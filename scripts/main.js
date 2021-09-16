@@ -146,6 +146,4 @@ jQuery(function($){
   $(function() {
     $("#nav").load("../html/parts/nav.html");
     $("#footer").load("../html/parts/footer.html");
-    $("#nav").load("../../html/parts/nav.html");
-    $("#footer").load("../../html/parts/footer.html");
 });
