@@ -75,7 +75,19 @@ header a{
   font-size: 1.5em;
   line-height: 2;
 }
-
+.sub{
+  display: none;
+}
+.lists dt::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  position: absolute;
+  right: 10%;
+}
+.lists dt.on::after{
+  content: "\f077";
+}
 
 @media(max-width:1000px){
   .maincontent{
