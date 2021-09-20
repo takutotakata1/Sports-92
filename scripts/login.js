@@ -1,7 +1,7 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"
+  import { getAuth , signOut} from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -54,7 +54,13 @@
           function (param) {　 //　paramに処理後のデータが入って戻ってくる
             // console.log(param); //　帰ってきたら実行する処理
             if(param!='true'){
-              firebase.auth().signOut();
+              const auth = getAuth();
+              signOut(auth).then(() => {
+                // Sign-out successful
+                console.log('logoutoutout!');
+              }).catch((error) => {
+                // An error happened.
+              });
               console.log('logout!');
             }
           },
