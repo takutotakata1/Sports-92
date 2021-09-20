@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 if (session_status() == PHP_SESSION_NONE) {
   // セッションは有効で、開始していないとき
   session_start();
@@ -6,7 +6,7 @@ if (session_status() == PHP_SESSION_NONE) {
 if($_SESSION['loginauth']=='true'){
   header("Location: private/main.php");
 }
-?> -->
+?>
 
 
 <!DOCTYPE html>

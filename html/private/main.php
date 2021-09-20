@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 if($_SESSION['loginauth']!='true'){
-  header("Location: ../login.html");
+  header("Location: ../login.php");
 }
 ?>
 
