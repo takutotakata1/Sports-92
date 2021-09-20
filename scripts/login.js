@@ -47,6 +47,7 @@
       console.log(useremail);
       const domain = useremail.split('@');
       if(domain!='stg.nada.ac.jp'){
+        firebase.auth().signOut();
         signOut(auth).then(() => {
           // Sign-out successful
           console.log('logoutoutout!');
