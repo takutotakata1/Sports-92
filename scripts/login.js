@@ -44,7 +44,7 @@
       console.log(useremail);
       $.ajax({
         type: "POST",
-        url: "request.php",
+        url: "../backend/request.php",
         data: {'gmail':useremail},
         dataType: "json",
         scriptCharset: 'utf-8'
