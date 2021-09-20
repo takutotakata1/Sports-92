@@ -35,7 +35,7 @@
     signInOptions: [
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     ],
-    signInSuccessUrl: "main.php",
+    signInSuccessUrl: "../html/login.php",
   };
   const user = firebase.auth().currentUser;
   firebase.auth().onAuthStateChanged((user) => {
