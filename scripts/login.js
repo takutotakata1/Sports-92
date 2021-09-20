@@ -40,8 +40,9 @@
   const user = firebase.auth().currentUser;
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
+      console.log("loginnow");
       const useremail = user.providerData[0].email;
-      // console.log(useremail);
+      console.log(useremail);
       $.ajax({
         type: "POST",
         url: "../backend/request.php",
