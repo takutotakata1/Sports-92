@@ -51,9 +51,6 @@ jQuery(function($){
   // animsitionの実行
   $(document).ready(function() {
     $(".animsition").animsition();
-    var str = window.location.href.split('/').pop();
-    var nowpage = str.split('.').shift()+'s';
-    $("."+nowpage+">a span").css("background","linear-gradient(transparent 75%, #7fbfff 75%)");
   });
 
   $(function() {
