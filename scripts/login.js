@@ -71,11 +71,10 @@
               //   // An error happened.
               // });
               console.log('logout!');
-            }
-          },
-          function (XMLHttpRequest, textStatus, errorThrown) { //　エラーが起きた時はこちらが実行される
-            console.log(XMLHttpRequest); //　エラー内容表示
-          });
+            },
+            function (XMLHttpRequest, textStatus, errorThrown) { //　エラーが起きた時はこちらが実行される
+              console.log(XMLHttpRequest); //　エラー内容表示
+            });
     }
   });
 
