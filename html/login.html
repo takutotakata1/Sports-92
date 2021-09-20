@@ -7,42 +7,56 @@
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
   <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
-  <script>
 
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyCljusNToNz5kbQHoeOyYkieB4IdMVgrlY",
-      authDomain: "sports-92.firebaseapp.com",
-      projectId: "sports-92",
-      storageBucket: "sports-92.appspot.com",
-      messagingSenderId: "693670324075",
-      appId: "1:693670324075:web:8eb71b2b891264a2954e2e",
-      measurementId: "G-6ZBQRLTG8Q"
-    };
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    let uiConfig = {
-      callbacks: {
-        signInSuccessWithAuthResult: function () {
-          console.log("ログイン成功")
-          return true;
-        },
-      },
-      signInOptions: [
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      ],
-    };
-
-    let ui = new firebaseui.auth.AuthUI(firebase.auth());
-    ui.start('#logincontainer', uiConfig);
-  </script>
 </head>
 
 <body>
   <div id="logincontainer"></div>
 </body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCljusNToNz5kbQHoeOyYkieB4IdMVgrlY",
+    authDomain: "sports-92.firebaseapp.com",
+    projectId: "sports-92",
+    storageBucket: "sports-92.appspot.com",
+    messagingSenderId: "693670324075",
+    appId: "1:693670324075:web:8eb71b2b891264a2954e2e",
+    measurementId: "G-6ZBQRLTG8Q"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  let uiConfig = {
+    callbacks: {
+      signInSuccessWithAuthResult: function () {
+        console.log("ログイン成功")
+        return true;
+      },
+    },
+    signInOptions: [
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    ],
+    signInSuccessUrl : "toppage.html",
+  };
+
+  let ui = new firebaseui.auth.AuthUI(firebase.auth());
+  ui.start('#logincontainer', uiConfig);
+</script>
+
 
 
 </html>
