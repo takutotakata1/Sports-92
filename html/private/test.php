@@ -1,3 +1,13 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+  // セッションは有効で、開始していないとき
+  session_start();
+}
+if($_SESSION['loginauth']!='true'){
+  header("Location: ../login.html");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
