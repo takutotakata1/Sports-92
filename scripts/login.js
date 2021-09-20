@@ -41,7 +41,7 @@
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       const useremail = user.providerData[0].email;
-      console.log(useremail);
+      // console.log(useremail);
       $.ajax({
         type: "POST",
         url: "../backend/request.php",
@@ -51,8 +51,10 @@
       })
         .then(
           function (param) {　 //　paramに処理後のデータが入って戻ってくる
-            console.log(param); //　帰ってきたら実行する処理
-            $('.login').text(param);
+            // console.log(param); //　帰ってきたら実行する処理
+            if(param!=true){
+              firebase.auth().signOut();
+            }
           },
           function (XMLHttpRequest, textStatus, errorThrown) { //　エラーが起きた時はこちらが実行される
             console.log(XMLHttpRequest); //　エラー内容表示
