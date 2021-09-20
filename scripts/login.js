@@ -53,8 +53,8 @@
         .then(
           function (param) {　 //　paramに処理後のデータが入って戻ってくる
             // console.log(param); //　帰ってきたら実行する処理
-            if(param!=true){
-              FirebaseAuth.getInstance().signOut();
+            if(param!='true'){
+              firebase.auth().signOut();
               console.log('logout!');
             }
           },

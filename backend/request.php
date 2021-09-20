@@ -7,10 +7,10 @@ if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 if($array[1]=='stg.nada.ac.jp'){
-  $param = true;
+  $param = 'true';
   $_SESSION['loginauth'] = 'true';
 } else{
-  $param = false;
+  $param = 'false';
   $_SESSION['loginauth'] = 'false';
 }
 echo json_encode($param);
