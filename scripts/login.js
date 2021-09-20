@@ -55,12 +55,21 @@
             // console.log(param); //　帰ってきたら実行する処理
             if(param!='true'){
               const auth = getAuth();
-              signOut(auth).then(() => {
+              firebase.auth().signOut().then(() => {
                 // Sign-out successful
-                console.log('logoutoutout!');
+                console.log('log!');
+                location.reload();
               }).catch((error) => {
                 // An error happened.
               });
+              console.log('logout!');
+            }
+              // signOut(auth).then(() => {
+              //   // Sign-out successful
+              //   console.log('logoutoutout!');
+              // }).catch((error) => {
+              //   // An error happened.
+              // });
               console.log('logout!');
             }
           },
