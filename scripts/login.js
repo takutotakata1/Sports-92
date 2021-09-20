@@ -1,7 +1,7 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
-  import { getAuth , signOut} from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"
+  import { getAuth , signOut ,GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -20,6 +20,8 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth();
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -43,6 +45,17 @@
       console.log("loginnow");
       const useremail = user.providerData[0].email;
       console.log(useremail);
+      const domain = useremail.split('@');
+      if(domain!='stg.nada.ac.jp'){
+        signOut(auth).then(() => {
+          // Sign-out successful
+          console.log('logoutoutout!');
+          location.reload();
+        }).catch((error) => {
+          // An error happened.
+        });
+        console.log('logout!');
+      }
       $.ajax({
         type: "POST",
         url: "../backend/request.php",
@@ -54,23 +67,15 @@
           function (param) {　 //　paramに処理後のデータが入って戻ってくる
             // console.log(param); //　帰ってきたら実行する処理
             if(param!='true'){
-              const auth = getAuth();
-              firebase.auth().signOut().then(() => {
-                // Sign-out successful
-                console.log('log!');
-                location.reload();
-              }).catch((error) => {
-                // An error happened.
-              });
-              console.log('logout!');
-            }
               // signOut(auth).then(() => {
               //   // Sign-out successful
               //   console.log('logoutoutout!');
+              //   location.reload();
               // }).catch((error) => {
               //   // An error happened.
               // });
-              console.log('logout!');
+              // console.log('logout!');
+            }
             },
             function (XMLHttpRequest, textStatus, errorThrown) { //　エラーが起きた時はこちらが実行される
               console.log(XMLHttpRequest); //　エラー内容表示
