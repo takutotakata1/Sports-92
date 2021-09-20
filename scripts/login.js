@@ -54,7 +54,8 @@
           function (param) {　 //　paramに処理後のデータが入って戻ってくる
             // console.log(param); //　帰ってきたら実行する処理
             if(param!=true){
-              firebase.auth().signOut();
+              FirebaseAuth.getInstance().signOut();
+              console.log('logout!');
             }
           },
           function (XMLHttpRequest, textStatus, errorThrown) { //　エラーが起きた時はこちらが実行される
