@@ -47,14 +47,16 @@
         console.log("ログイン成功")
         return true;
       },
+      uiShown: function () {
+        var provider = new firebase.auth.GoogleAuthProvider();
+        provider.setCustomParameters({ hd: 'stg.nada-sc.jp' });
+      }
     },
     signInOptions: [
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     ],
     signInSuccessUrl: "toppage.html",
   };
-  var provider = new firebase.auth.GoogleAuthProvider();
-  provider.setCustomParameters({hd:'stg.nada-sc.jp'});
 
   let ui = new firebaseui.auth.AuthUI(firebase.auth());
   ui.start('#logincontainer', uiConfig);
