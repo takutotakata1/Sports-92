@@ -18,8 +18,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const provider = new GoogleAuthProvider();
 const auth = getAuth();
 
@@ -47,7 +45,7 @@ firebase.auth().onAuthStateChanged((user) => {
     console.log(useremail);
     const signOutMessage = `
         <p>Hello, ${user.providerData[0].displayName}!<\/p>
-        <button type="submit"  onClick="signOut()">サインアウト<\/button>
+        <button type="submit"  onClick="signOutss()">サインアウト<\/button>
         `;
     document.getElementById('auth').innerHTML =  signOutMessage;
     // const domain = useremail.split('@');
@@ -89,7 +87,7 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
 
-function signOut() {
+function signOutss() {
   firebase.auth().onAuthStateChanged(user => {
     firebase
       .auth()
