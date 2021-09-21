@@ -88,7 +88,7 @@
   });
 
   jQuery(function ($) {
-    $('#button').on('click',function(){
+    $('#logout').on('click',function(){
       console.log("outaaaa");
       firebase.auth().signOut();
     })
