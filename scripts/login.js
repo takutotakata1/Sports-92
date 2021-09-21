@@ -106,7 +106,7 @@
           });
       });
 
-    let ui;
+    let ui = new firebaseui.auth.AuthUI(firebase.auth());
     if (ui) {
       ui.reset();
     } else {
