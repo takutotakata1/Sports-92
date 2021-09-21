@@ -117,6 +117,11 @@ if($_SESSION['loginauth']=='true'){
       const useremail = user.providerData[0].email;
       console.log(useremail);
       const domain = useremail.split('@');
+
+      const provider = new auth.GoogleAuthProvider();
+      provider.setCustomParameters({
+      hd: '@stg.nada.ac.jp'
+    });
       const signOutMessage = `
       <p>Hello, ${user.providerData[0].displayName}!<\/p>
       <button type="submit"  onClick="signOutss()">サインアウト<\/button>
