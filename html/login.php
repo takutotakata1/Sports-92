@@ -30,7 +30,7 @@ if($_SESSION['loginauth']=='true'){
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../vendor/marker-animation.js"></script>
   <script src="../vendor/aimsition.js"></script>
-  <script type="text/javascript" src="../scripts/login.js"></script>
+  <!-- <script type="text/javascript" src="../scripts/login.js"></script> -->
   <script src="../scripts/main.js"></script>
 
   <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
@@ -204,5 +204,4 @@ if($_SESSION['loginauth']=='true'){
     ui.start('#logincontainer', uiConfig);
 
 </script>
->>>>>>> parent of f96483a (コメントアウト)
 </html>
