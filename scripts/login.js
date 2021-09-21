@@ -39,7 +39,7 @@
     ],
     signInSuccessUrl: "../html/login.php",
   };
-  firebase.auth().onAuthStateChanged(auth, (user) => {
+  firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       console.log("loginnow");
       const useremail = user.providerData[0].email;
