@@ -90,9 +90,7 @@
   jQuery(function ($) {
     
       $('#logout').on('click',function(){
-        GoogleSignIn
-        .getClient(context, googleSignInOptions)
-        .signOut()
+
         console.log("outaaaa");
         signOut(auth).then(() => {
               // Sign-out successful
