@@ -45,7 +45,7 @@ if($_SESSION['loginauth']=='true'){
     rel="stylesheet">
     
   <link rel="icon" href="../img/logo.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../img/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/logo-black.png">
   <title>ログイン</title>
 </head>
 
