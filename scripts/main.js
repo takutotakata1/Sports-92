@@ -63,8 +63,5 @@ jQuery(function($){
   $(function() {
     $("#nav").load("../html/parts/nav.html");
     $("#footer").load("../html/parts/footer.html");
-<<<<<<< HEAD
-=======
     $("#privatenav").load("nav.html");
->>>>>>> develop
 });
