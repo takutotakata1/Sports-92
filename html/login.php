@@ -64,7 +64,6 @@ if($_SESSION['loginauth']=='true'){
       </div>
     </div>
     <div id="logincontainer"></div>
-    <div id="auth"></div>
     <p>あああ</p>
   </div>
 </body>
@@ -121,10 +120,6 @@ if($_SESSION['loginauth']=='true'){
       const useremail = user.providerData[0].email;
       console.log(useremail);
       const domain = useremail.split('@');
-      const provider = new firebase.auth.GoogleAuthProvider();
-      provider.setCustomParameters({
-        hd: '@stg.nada.ac.jp'
-      });
       const signOutMessage = `
       <p>Hello, ${user.providerData[0].displayName}!<\/p>
       <button type="submit"  onClick="signOutss()">サインアウト<\/button>
@@ -185,20 +180,12 @@ if($_SESSION['loginauth']=='true'){
     }
 
   jQuery(function ($) {
-    
-      $('#logout').on('click',function(){
-
-        console.log("outaaaa");
-        signOut(auth).then(() => {
-              // Sign-out successful
-            console.log('logoutoutout!');
-            ui.reset();   
-            ui.start('#logincontainer', uiConfig);
-            }).catch((error) => {
-              // An error happened.
-            });
-            console.log('logout!');
-          });
+    $("#logincontainer").on("click", function () {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      provider.setCustomParameters({
+        hd: '@stg.nada.ac.jp'
+      });
+    });
       });
 
     let ui;
