@@ -50,7 +50,7 @@
         firebase.auth().signOut();
         console.log('button!');
       });
-      if(domain!='stg.nada.ac.jp'){
+      /*if(domain!='stg.nada.ac.jp'){
         firebase.auth().signOut();
         signOut(auth).then(() => {
           // Sign-out successful
@@ -60,7 +60,7 @@
           // An error happened.
         });
         console.log('logout!');
-      }
+      }*/
       $.ajax({
         type: "POST",
         url: "../backend/request.php",
