@@ -38,7 +38,7 @@ header a{
   margin-bottom: -4em;
 }
 .description h2{
-  font-size: 30px;
+  font-size: 10px;
   line-height: 1.5;
   padding-left:1em;
   text-indent:-1em;
@@ -46,7 +46,7 @@ header a{
 #logincontainer{
   margin-top: 2em;
   text-align: center;
-  font-size: 40px;
+  font-size: 15px;
 }
 .outbutton{
   margin: 10px auto;
