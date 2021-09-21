@@ -87,7 +87,18 @@
             });
     }
   });
-
+  jQuery(function ($) {
+      $('#logout').on('click',function(){
+        console.log("outaaaa");
+        signOut(auth).then(() => {
+              // Sign-out successful
+              console.log('logoutoutout!');
+            }).catch((error) => {
+              // An error happened.
+            });
+            console.log('logout!');
+          });
+      });
 
   let ui = new firebaseui.auth.AuthUI(firebase.auth());
   ui.start('#logincontainer', uiConfig);
