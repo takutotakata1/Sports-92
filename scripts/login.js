@@ -100,7 +100,6 @@
             }).catch((error) => {
               // An error happened.
             });
-            GoogleSignIn.getClient(context,googleSignInOptions).signOut();
             console.log('logout!');
           });
       });
