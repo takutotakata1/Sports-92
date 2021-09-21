@@ -63,7 +63,7 @@ if($_SESSION['loginauth']=='true'){
       </div>
     </div>
     <div id="logincontainer"></div>
-    <button class="logout">ログアウト</button>
+    <input id="logout" type="button" value="ログアウト">
     <p>あああ</p>
   </div>
 </body>

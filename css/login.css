@@ -45,7 +45,7 @@ header a{
 #logincontainer{
   margin-top: 2em;
 }
-.logout{
+#logout{
   width: 500px;
   color: aqua;
   box-shadow: black 0 0 3px;
