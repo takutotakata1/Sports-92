@@ -94,7 +94,7 @@
               // Sign-out successful
             console.log('logoutoutout!');
             ui.reset();   
-            ui.start('#firebaseui-auth-container', uiConfig);
+            ui.start('#logincontainer', uiConfig);
             }).catch((error) => {
               // An error happened.
             });
@@ -103,4 +103,4 @@
       });
 
     let ui = new firebaseui.auth.AuthUI(firebase.auth());
-    ui.start('#firebaseui-auth-container', uiConfig);
+    ui.start('#logincontainer', uiConfig);
