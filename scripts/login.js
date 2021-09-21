@@ -74,7 +74,7 @@
               signOut(auth).then(() => {
                 // Sign-out successful
                 console.log('logoutoutout!');
-                location.reload();
+                // location.reload();
               }).catch((error) => {
                 // An error happened.
               });
@@ -90,8 +90,14 @@
   jQuery(function ($) {
     $('#logout').on('click',function(){
       console.log("outaaaa");
-      firebase.auth().signOut();
-    })
+      signOut(auth).then(() => {
+            // Sign-out successful
+            console.log('logoutoutout!');
+          }).catch((error) => {
+            // An error happened.
+          });
+          console.log('logout!');
+        });
     });
 
   let ui = new firebaseui.auth.AuthUI(firebase.auth());
