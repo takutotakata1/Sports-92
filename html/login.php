@@ -30,7 +30,7 @@ if($_SESSION['loginauth']=='true'){
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../vendor/marker-animation.js"></script>
   <script src="../vendor/aimsition.js"></script>
-  <!-- <script type="text/javascript" src="../scripts/login.js"></script> -->
+  <!-- <script type="module" src="../scripts/login.js"></script> -->
   <script src="../scripts/main.js"></script>
 
   <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
@@ -68,8 +68,6 @@ if($_SESSION['loginauth']=='true'){
     <p>あああ</p>
   </div>
 </body>
-<<<<<<< HEAD
-=======
 <script type="text/javascript">
     // Import the functions you need from the SDKs you need
   //   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
@@ -91,10 +89,10 @@ if($_SESSION['loginauth']=='true'){
   };
 
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-  const provider = new GoogleAuthProvider();
-  const auth = getAuth();
+  // const app = initializeApp(firebaseConfig);
+  // const analytics = getAnalytics(app);
+  // const provider = new GoogleAuthProvider();
+  // const auth = getAuth();
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
