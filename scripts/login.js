@@ -88,6 +88,12 @@
     }
   });
 
+  jQuery(function ($) {
+    $('#button').on('click',function(){
+      console.log("outaaaa");
+      firebase.auth().signOut();
+    })
+    });
 
   let ui = new firebaseui.auth.AuthUI(firebase.auth());
   ui.start('#logincontainer', uiConfig);
