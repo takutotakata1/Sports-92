@@ -102,5 +102,10 @@
           });
       });
 
-    let ui = new firebaseui.auth.AuthUI(firebase.auth());
+    let ui;
+    if (ui) {
+      ui.reset();
+    } else {
+      ui = new firebaseui.auth.AuthUI(firebase.auth());
+    }
     ui.start('#logincontainer', uiConfig);
