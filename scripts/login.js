@@ -86,6 +86,7 @@
             function (XMLHttpRequest, textStatus, errorThrown) { //　エラーが起きた時はこちらが実行される
               console.log(XMLHttpRequest); //　エラー内容表示
             });
+            
     }
   });
 
