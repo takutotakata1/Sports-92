@@ -46,10 +46,11 @@
       const useremail = user.providerData[0].email;
       console.log(useremail);
       const domain = useremail.split('@');
-      $('#logout').on('click',function(){
-        firebase.auth().signOut();
-        console.log('button!');
-      });
+      const signOutMessage = `
+      <p>Hello, ${user.providerData[0].displayName}!<\/p>
+      <button type="submit"  onClick="signOutss()">サインアウト<\/button>
+      `;
+      document.getElementById('logincontainer').innerHTML =  signOutMessage;
       /*if(domain!='stg.nada.ac.jp'){
         firebase.auth().signOut();
         signOut(auth).then(() => {
@@ -87,6 +88,22 @@
             });
     }
   });
+
+  function signOutss() {
+    firebase.auth().onAuthStateChanged(user => {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          console.log('ログアウトしました');
+          location.reload();
+        })
+        .catch((error) => {
+          console.log(`ログアウト時にエラーが発生しました (${error})`);
+        });
+    });
+    }
+
   jQuery(function ($) {
     
       $('#logout').on('click',function(){
