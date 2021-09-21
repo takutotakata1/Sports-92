@@ -46,6 +46,10 @@
       const useremail = user.providerData[0].email;
       console.log(useremail);
       const domain = useremail.split('@');
+      $('.logout').on('click',function(){
+        firebase.auth().signOut();
+        console.log('button!');
+      });
       if(domain!='stg.nada.ac.jp'){
         firebase.auth().signOut();
         signOut(auth).then(() => {

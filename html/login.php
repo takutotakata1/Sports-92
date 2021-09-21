@@ -63,6 +63,8 @@ if($_SESSION['loginauth']=='true'){
       </div>
     </div>
     <div id="logincontainer"></div>
+    <button class="logout">ログアウト</button>
+    <p>あああ</p>
   </div>
 </body>
 
