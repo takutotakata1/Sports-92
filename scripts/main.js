@@ -46,6 +46,13 @@ jQuery(function($){
         return false;
        })
     });
+    $('.judge').each(function(){
+      $(this).on('click',function () { 
+        $(this).toggleClass('on');
+        $('+p',this).slideToggle();
+        return false;
+       })
+    });
   });
 
   // animsitionの実行
@@ -56,4 +63,5 @@ jQuery(function($){
   $(function() {
     $("#nav").load("../html/parts/nav.html");
     $("#footer").load("../html/parts/footer.html");
+    $("#privatenav").load("nav.html");
 });
