@@ -45,11 +45,6 @@ header a{
 #logincontainer{
   margin-top: 2em;
 }
-#logout{
-  width: 500px;
-  color: aqua;
-  box-shadow: black 0 0 3px;
-}
 
 /* メインコンテンツ */
 .maincontent{
