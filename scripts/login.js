@@ -39,7 +39,7 @@
     ],
     signInSuccessUrl: "../html/login.php",
   };
-  const user = firebase.auth().currentUser;
+  user = firebase.auth().currentUser;
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       console.log("loginnow");
@@ -50,17 +50,17 @@
         firebase.auth().signOut();
         console.log('button!');
       });
-      if(domain!='stg.nada.ac.jp'){
-        firebase.auth().signOut();
-        signOut(auth).then(() => {
-          // Sign-out successful
-          console.log('logoutoutout!');
-          location.reload();
-        }).catch((error) => {
-          // An error happened.
-        });
-        console.log('logout!');
-      }
+      // if(domain!='stg.nada.ac.jp'){
+      //   firebase.auth().signOut();
+      //   signOut(auth).then(() => {
+      //     // Sign-out successful
+      //     console.log('logoutoutout!');
+      //     location.reload();
+      //   }).catch((error) => {
+      //     // An error happened.
+      //   });
+      //   console.log('logout!');
+      // }
       $.ajax({
         type: "POST",
         url: "../backend/request.php",
@@ -72,14 +72,14 @@
           function (param) {　 //　paramに処理後のデータが入って戻ってくる
             // console.log(param); //　帰ってきたら実行する処理
             if(param!='true'){
-              // signOut(auth).then(() => {
-              //   // Sign-out successful
-              //   console.log('logoutoutout!');
-              //   location.reload();
-              // }).catch((error) => {
-              //   // An error happened.
-              // });
-              // console.log('logout!');
+              signOut(auth).then(() => {
+                // Sign-out successful
+                console.log('logoutoutout!');
+                location.reload();
+              }).catch((error) => {
+                // An error happened.
+              });
+              console.log('logout!');
             }
             },
             function (XMLHttpRequest, textStatus, errorThrown) { //　エラーが起きた時はこちらが実行される
