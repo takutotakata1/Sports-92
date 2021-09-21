@@ -37,63 +37,47 @@ header a{
   margin-top: -2em;
   margin-bottom: -4em;
 }
-/* メインコンテンツ */
+.description h2{
+  font-size: 20px;
+  line-height: 1.5;
+  padding-left:1em;
+  text-indent:-1em;
+}
+#logincontainer{
+  margin-top: 2em;
+  text-align: center;
+  font-size: 15px;
+}
+.outbutton{
+  margin: 10px auto;
+  display: block;
+  background-color: #e57373;
+  color:#fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
 
+/* メインコンテンツ */
 .maincontent{
   display: flex;
   flex-direction: column;
   margin: 0 10%;
 }
-
 .midashi{
-  font-size: 4rem;
+  font-size: 4em;
 }
 .midashi span{
   font-size: 1.5em;
   color: #f15a25;
 }
-
-/* 表 */
-.lists dt{
-  font-size: 3em;
-  font-weight: 500;
-  border-left: 2px solid #f15a25;
-  border-bottom: 1px solid #d9d9d9;
-  padding: 0.4em;
-  /* margin-bottom: 60px; */
-  margin-top: 60px;
-}
-.lists dd{
-  margin-top: 40px;
-  font-size: 2em;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #d9d9d9;
-  border-left: 1px solid #d9d9d9;
-  padding: 0.4em;
-}
-.lists p{
-  font-size: 1.5em;
-  /* margin-bottom: 10px; */
-}
-
-
 @media(max-width:1000px){
   .maincontent{
     margin: 0 4%;
   }
   .midashi{
-    font-size: 2.5rem;
+    font-size: 2.5em;
   }
-  .lists dt{
+  .midashi span{
     font-size: 1.5em;
-    margin-top: 20px;
-  }
-  .lists dd{
-    font-size: 1.3em;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  .lists p{
-    font-size: 1em;
   }
 }

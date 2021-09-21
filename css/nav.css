@@ -76,6 +76,10 @@
 .gnav__menu__item a span:hover{
   color: #666;
 }
+.midashiprivate{
+  font-size: 1.3em;
+  margin-bottom: auto;
+}
 
 
 @media(max-width:1000px){
