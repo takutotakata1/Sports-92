@@ -60,23 +60,15 @@ if($_SESSION['loginauth']=='true'){
       <h1 class="midashi"><span>ロ</span>グイン</h1>
       <div class="description">
         <h2>※学校用Googleアカウントでログインしてください。</h2>
-        <h2>※もし間違えたアカウントでログインしてしまった場合は、他のブラウザを使用してログインし直すようにしてください。</h2>
+        <h2>※もし間違えたアカウントでログインしてしまった場合は、Chromeを使用してログインし直すようにしてください。</h2>
       </div>
     </div>
     <div id="logincontainer"></div>
-    <p>あああ</p>
   </div>
 </body>
-<script type="text/javascript">
-    // Import the functions you need from the SDKs you need
-  //   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-  // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
-  // import { getAuth , signOut ,GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+<script type="text/javascript">
   const firebaseConfig = {
     apiKey: "AIzaSyCljusNToNz5kbQHoeOyYkieB4IdMVgrlY",
     authDomain: "sports-92.firebaseapp.com",
@@ -121,8 +113,8 @@ if($_SESSION['loginauth']=='true'){
       console.log(useremail);
       const domain = useremail.split('@');
       const signOutMessage = `
-      <p>Hello, ${user.providerData[0].displayName}!<\/p>
-      <button type="submit"  onClick="signOutss()">サインアウト<\/button>
+      <p>${user.providerData[0].displayName}のアカウントで現在ログインしています。Chromeを使用してログインし直してください。<\/p>
+      <button class="outbutton" type="submit"  onClick="signOutss()">サインアウト<\/button>
       `;
       document.getElementById('logincontainer').innerHTML =  signOutMessage;
       /*if(domain!='stg.nada.ac.jp'){
