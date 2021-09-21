@@ -92,7 +92,13 @@
         console.log("outaaaa");
         signOut(auth).then(() => {
               // Sign-out successful
-              console.log('logoutoutout!');
+            console.log('logoutoutout!');
+            if (ui) {
+              ui.reset();
+            } else {
+              ui = new firebaseui.auth.AuthUI(firebase.auth());
+            }
+            ui.start('#firebaseui-auth-container', uiConfig);
             }).catch((error) => {
               // An error happened.
             });
@@ -100,5 +106,10 @@
           });
       });
 
-  let ui = new firebaseui.auth.AuthUI(firebase.auth());
-  ui.start('#logincontainer', uiConfig);
+    let ui;
+    if (ui) {
+      ui.reset();
+    } else {
+      ui = new firebaseui.auth.AuthUI(firebase.auth());
+    }
+    ui.start('#firebaseui-auth-container', uiConfig);
