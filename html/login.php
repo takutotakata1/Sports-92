@@ -60,11 +60,10 @@ if($_SESSION['loginauth']=='true'){
       <h1 class="midashi"><span>ロ</span>グイン</h1>
       <div class="description">
         <h2>※学校用Googleアカウントでログインしてください。</h2>
+        <h2>※もし間違えたアカウントでログインしてしまった場合は、Google Chromeを使用するようにしてください。</h2>
       </div>
     </div>
     <div id="logincontainer"></div>
-    <input id="logout" type="button" value="ログアウト">
-    <p>あああ</p>
   </div>
 </body>
 
