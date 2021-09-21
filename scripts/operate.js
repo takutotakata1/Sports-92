@@ -1,4 +1,4 @@
-$.getJSON("/scripts/points.json")
+$.getJSON("../scripts/points.json")
   .done(function (json) {
     console.log(json.pointslist);
     jQuery(function ($) {
