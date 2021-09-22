@@ -84,12 +84,12 @@ header a{
 .judge::after{
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f078";
+  content: "\f13a";
   position: absolute;
   right: 10%;
 }
 .judge.on::after{
-  content: "\f077";
+  content: "\f139";
 }
 .lists dt::after{
   font-family: "Font Awesome 5 Free";
